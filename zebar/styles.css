@@ -1,0 +1,164 @@
+/**
+ * Import the Nerdfonts icon font.
+ * Ref https://www.nerdfonts.com/cheat-sheet for a cheatsheet of available Nerdfonts icons.
+ */
+@import 'https://www.nerdfonts.com/assets/css/webfont.css';
+
+/* VARIABLES
+    --light: #FFFFFF;
+    --trans: #0000001f;
+    --dark: #000000;
+    --pri-fair: #FFAFFF;
+    --pri-light: #FF5CE1;
+    --pri-trans: #FF5CE11F;
+    --pri-dark: #B55088;
+    --sec-fair: #99CCCC;
+    --sec-light: #007F7F;
+    --sec-trans: #0f636524;
+    --sec-dark: #004C4C;
+    --ter-light: #8787FF;
+    --ter-trans: #18142624;
+    --ter-dark: #181426;
+    --succ-fair: #AFE1AF;
+    --succ-light: #3E8948;
+    --succ-trans: #3E894817;
+    --succ-dark: #34703E;
+    --warn-fair: #FFFFAF;
+    --warn-light: #FEAE34;
+    --err-fair: #FFAFAF;
+    --err-light: #E43B44;
+    --err-dark: #22020A;
+*/
+
+i {
+  color: #99CCCC;
+  margin-right: 7px;
+}
+
+body {
+  color: #FFFFFF;
+  font-family: ui-monospace, monospace;
+  font-size: 12px;
+  overflow: hidden;
+}
+
+div,
+span,
+p {
+  cursor: default;
+  user-select: none;
+}
+
+html,
+body,
+#root {
+  height: 100%;
+}
+
+#root {
+  background: #B55088;
+}
+
+.app {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  align-items: center;
+  height: 100%;
+  padding: 4px 1.5vw;
+}
+
+.left,
+.center,
+.right {
+  display: flex;
+  align-items: center;
+}
+
+.center {
+  justify-self: center;
+}
+
+.right {
+  justify-self: end;
+}
+
+.status {
+  background-color: #FFAFFF;
+}
+
+.logo {
+  color: #FFAFFF;
+}
+
+.logo,
+.binding-mode,
+.tiling-direction,
+.paused-button {
+  margin-right: 20px;
+}
+
+.network,
+.memory,
+.cpu,
+.battery,
+.weather {
+  padding-left: 10px;
+  padding-right: 10px;
+  background-color: #007F7F;
+  border-bottom: 4px solid #99CCCC;
+}
+
+.workspaces {
+  display: flex;
+  align-items: center;
+}
+
+.workspace {
+  background: rgb(255 255 255 / 5%);
+  margin-right: 4px;
+  padding: 4px 8px;
+  color: rgb(255 255 255 / 90%);
+  border: none;
+  border-radius: 2px;
+  cursor: pointer;
+
+  &.displayed {
+    background: rgb(255 255 255 / 15%);
+  }
+
+  &.focused,
+  &:hover {
+    background: #8787FF;
+  }
+}
+
+.binding-mode,
+.tiling-direction,
+.paused-button {
+  background: rgb(255 255 255 / 15%);
+  color: rgb(255 255 255 / 90%);
+  border-radius: 2px;
+  line-height: 1;
+  padding: 4px 8px;
+  border: 0;
+  cursor: pointer;
+}
+
+.binding-mode {
+  margin-right: 4px;
+}
+
+.cpu .high-usage {
+  color: #900029;
+}
+
+.battery {
+  position: relative;
+}
+
+.battery .charging-icon {
+  position: absolute;
+  font-size: 7px;
+  left: -8px;
+  top: 3px;
+}
