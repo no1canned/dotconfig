@@ -1,7 +1,7 @@
 general:
   # Commands to run when the WM has started. This is useful for running a
   # script or launching another application.
-  # Example: The below command launches Zebar.
+  # Launch Zebar and remove Windows taskbar
   startup_commands: ['shell-exec zebar', 'shell-exec nircmd.exe win trans class Shell_TrayWnd 256']
 
   # Commands to run just before the WM is shutdown.
